@@ -1,0 +1,39 @@
+#define ena 2
+#define i1 3
+#define i2 4
+#define i3 5
+#define i4 6
+
+void setup()
+{
+  pinMode(ena, OUTPUT);
+  pinMode(i1, OUTPUT);
+  pinMode(i2, OUTPUT);
+  pinMode(i3, OUTPUT);
+  pinMode(i4, OUTPUT);
+}
+
+void loop()
+{
+  //for motor A
+  digitalWrite(2, 1);
+  digitalWrite(3, 0);
+  digitalWrite(4, 1);
+  digitalWrite(5, 0);
+  digitalWrite(6, 1);
+  delay(1000);
+  // to stop
+  digitalWrite(2, 0);
+  digitalWrite(3, 0);
+  digitalWrite(4, 0);
+  digitalWrite(5, 0);
+  digitalWrite(6, 0);
+  delay(300);
+  //for motor B
+  digitalWrite(2, 0);
+  digitalWrite(3, 1);
+  digitalWrite(4, 0);
+  digitalWrite(5, 1);
+  digitalWrite(6, 0);
+  delay(1000);
+ }
